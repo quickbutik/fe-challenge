@@ -6,6 +6,9 @@ export function AddToCartButton({ productId }: { productId: string }) {
       method: 'POST',
       body: JSON.stringify({ productId }),
     })
+
+    // TODO: This alert should be replaced with something better.
+    alert('Added to cart!')
   }
 
   return (

@@ -23,6 +23,10 @@ export namespace SDK {
 
     return data.products.slice(offset, offset + limit)
   }
+
+  export const getFirstProduct = async () => {
+    return data.products[0]
+  }
 }
 
 const delay = (min: number, max: number) =>

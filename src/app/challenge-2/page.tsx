@@ -3,9 +3,7 @@ import { SDK } from '@/utils/sdk'
 import Image from 'next/image'
 
 export default async function Challenge2() {
-  const product = await SDK.getAllProducts({ limit: 1, offset: 0 }).then(
-    (products) => products[0],
-  )
+  const product = await SDK.getFirstProduct()
 
   return (
     <div>
