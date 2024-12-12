@@ -8,7 +8,9 @@ export function AddToCartButton({ productId }: { productId: string }) {
     })
 
     // TODO: This alert should be replaced with something better.
-    alert('Added to cart!')
+    alert(
+      'Added to cart! Refresh the page to see the number change in the header. (hint: please remove me)',
+    )
   }
 
   return (
